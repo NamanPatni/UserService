@@ -2,9 +2,6 @@ package org.example.service;
 
 import io.jsonwebtoken.Jwts;
 import org.antlr.v4.runtime.misc.Pair;
-import org.example.dto.LoginRequestDto;
-import org.example.dto.SignUpRequestDto;
-import org.example.dto.UserResponseDto;
 import org.example.exceptions.InvalidEmailException;
 import org.example.exceptions.InvalidPasswordException;
 import org.example.exceptions.UserAlreadyExistsException;
@@ -14,7 +11,6 @@ import org.example.models.User;
 import org.example.repository.IRoleRepository;
 import org.example.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.webmvc.autoconfigure.WebMvcProperties;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
